@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
+import "../Styles/Menu.css";
 
 const Menu = () => {
   return (
-    <nav>
-      <Link to="/"> Home </Link>
-      <Link to="/about"> About (Teste) </Link>
-    </nav>
+    <div>
+      <nav>
+        <img src="src\assets\marca.png"/>
+        <Link to="/"> Início </Link>
+        <Link to="/filmes"> Filmes </Link>
+        <Link to="/games"> Games </Link>
+        <Link to="/politica"> Política de Privacidade </Link>
+        <Link to="/login"> Login | Cadastre </Link>
+      </nav>
+    </div>
   );
 };
 
