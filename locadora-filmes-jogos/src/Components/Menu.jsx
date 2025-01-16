@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <div>
       <nav>
-        <img src="src\assets\marca.png"/>
+        <img src="src\assets\marca.png" alt="logo-locaflick"/>
         <Link to="/"> Início </Link>
         <Link to="/filmes"> Filmes </Link>
         <Link to="/games"> Games </Link>

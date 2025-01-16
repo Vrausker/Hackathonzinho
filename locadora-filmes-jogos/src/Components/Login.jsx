@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../Styles/Login.css"
 
 const Login = () => {
   const [login, setLogin] = useState("");
@@ -11,7 +12,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className ="loginContainer">
       <div>
         <label>
           Login
@@ -34,6 +35,7 @@ const Login = () => {
             onChange={(e) => setPass(e.target.value)}
           />
         </label>
+        <p className="register"> Não tem conta? Registre-se! </p>
       </div>
       <div>
         <form onSubmit={handleSubmit}>
