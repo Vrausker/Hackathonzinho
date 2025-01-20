@@ -1,6 +1,9 @@
 html,
 body {
     height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0;
     background: rgb(75, 25, 105);
     background: linear-gradient(176deg, rgba(75, 25, 105, 1) 0%, rgba(54, 16, 80, 1) 48%, rgba(32, 6, 54, 1) 100%);
 }
@@ -28,20 +31,70 @@ body {
     font-optical-sizing: auto;
     font-weight: 200;
     font-style: normal;
-    font-size: 25px;
+    font-size: 20px;
     width: 84.8%;
     margin-top: 10px;
 }
 
 
-img {
-    height: 450px;
-    margin-right: -45px;
+.wrapper img {
+    height: 500px;
+    width: 188px;
+    margin-right: -62px;
     transition: 1s;
+    position: relative;
+    z-index: 1;
+
+}
+
+.wrapper img:hover {
+    transform: translateX(-10%);
+}
+
+.titleFilmes h1 {
+    color: white;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide img {
+    width: 90%;
+    height: auto;
+    transition: 0.5s;
     position: relative;
     z-index: 1;
 }
 
-img:hover {
-    transform: translateX(-10%);
+.swiper-slide img:hover {
+    transform: translateY(-5%);
+}
+
+.swiper {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-wrapper {
+    background-color: rgba(93, 28, 132, 1);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: fit-content;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    padding: 8px 16px;
+    border-radius: 100%;
+    color: white;
 }
